@@ -83,4 +83,21 @@ async function init() {
         return;
     }
     
-    const solventsData = await loadSol
+    const solventsData = await loadSolventData();
+    
+    if (!solventsData) {
+        document.getElementById('solvent-card').innerHTML = 
+            '<p class="error">❌ Errore nel caricamento dei dati.<br><br>Verifica la connessione internet.</p>';
+        return;
+    }
+    
+    if (!solventsData[solventId]) {
+        document.getElementById('solvent-card').innerHTML = 
+            '<p class="error">❌ Solvente non trovato nel database.</p>';
+        return;
+    }
+    
+    displaySolvent(solventsData[solventId]);
+}
+
+document.addEventListener('DOMContentLoaded', init);
