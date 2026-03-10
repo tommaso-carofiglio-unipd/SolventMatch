@@ -1,0 +1,70 @@
+{
+  "acetone": {
+    "nome": "Acetone",
+    "formula": "CH₃COCH₃",
+    "cas": "67-64-1",
+    "polarita": "Polare aprotico",
+    "puntoDiEbollizione": "56°C",
+    "miscibilitaAcqua": "Completamente miscibile",
+    "densita": "0.791 g/mL",
+    "proprietaChiave": [
+      "Ottimo solvente per composti polari e apolari",
+      "Volatile",
+      "Igroscopico"
+    ],
+    "usi": "Pulizia vetreria, sintesi organica, cristallizzazioni",
+    "sicurezza": "Infiammabile. Utilizzare in cappa aspirante.",
+    "colore": "#E8F4F8"
+  },
+  "etanolo": {
+    "nome": "Etanolo",
+    "formula": "CH₃CH₂OH",
+    "cas": "64-17-5",
+    "polarita": "Polare protico",
+    "puntoDiEbollizione": "78°C",
+    "miscibilitaAcqua": "Completamente miscibile",
+    "densita": "0.789 g/mL",
+    "proprietaChiave": [
+      "Solvente protico",
+      "Donatore di legami idrogeno",
+      "Biodegradabile"
+    ],
+    "usi": "Cristallizzazioni, estrazioni, sintesi organica",
+    "sicurezza": "Infiammabile. Evitare fonti di ignizione.",
+    "colore": "#FFF4E6"
+  },
+  "diclorometano": {
+    "nome": "Diclorometano",
+    "formula": "CH₂Cl₂",
+    "cas": "75-09-2",
+    "polarita": "Polare aprotico",
+    "puntoDiEbollizione": "40°C",
+    "miscibilitaAcqua": "Immiscibile (1.3%)",
+    "densita": "1.33 g/mL",
+    "proprietaChiave": [
+      "Molto volatile",
+      "Più denso dell'acqua",
+      "Ottimo per estrazioni"
+    ],
+    "usi": "Estrazioni liquido-liquido, cromatografia, sintesi",
+    "sicurezza": "Tossico. Usare sempre in cappa. Possibile cancerogeno.",
+    "colore": "#FFE5E5"
+  },
+  "esano": {
+    "nome": "n-Esano",
+    "formula": "CH₃(CH₂)₄CH₃",
+    "cas": "110-54-3",
+    "polarita": "Apolare",
+    "puntoDiEbollizione": "69°C",
+    "miscibilitaAcqua": "Immiscibile",
+    "densita": "0.659 g/mL",
+    "proprietaChiave": [
+      "Completamente apolare",
+      "Meno denso dell'acqua",
+      "Volatile"
+    ],
+    "usi": "Estrazioni, cromatografia, pulizia, cristallizzazioni",
+    "sicurezza": "Altamente infiammabile. Tossico per il sistema nervoso.",
+    "colore": "#F0FFF0"
+  }
+}
