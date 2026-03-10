@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    font-size: 1.1em;
+    opacity: 0.95;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.solvent-header {
+    padding: 35px;
+    text-align: center;
+    border-bottom: 3px solid rgba(0,0,0,0.1);
+}
+
+.solvent-header h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.formula {
+    font-size: 2em;
+    color: #555;
+    font-weight: 300;
+    font-family: 'Times New Roman', serif;
+}
+
+.solvent-body {
+    padding: 30px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.info-row:last-of-type {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: 600;
+    color: #667eea;
+    flex: 1;
+}
+
+.value {
+    color: #333;
+    flex: 1.5;
+    text-align: right;
+    font-weight: 500;
+}
+
+.section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.section h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section li {
+    padding: 12px 0;
+    padding-left: 35px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.section li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.section p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.05em;
+}
+
+.safety {
+    background: #fff3cd;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #ffc107;
+    margin-top: 25px;
+}
+
+.safety h3 {
+    color: #856404;
+}
+
+.safety p {
+    color: #856404;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.loading {
+    text-align: center;
+    padding: 80px 20px;
+    color: #666;
+    font-size: 1.3em;
+}
+
+.error {
+    text-align: center;
+    padding: 60px 30px;
+    color: #d32f2f;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    opacity: 0.9;
+    font-size: 0.95em;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .solvent-header h2 {
+        font-size: 2em;
+    }
+    
+    .formula {
+        font-size: 1.5em;
+    }
+    
+    .info-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .value {
+        text-align: left;
+    }
+}
